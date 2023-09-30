@@ -116,6 +116,7 @@ const ThreeScene: React.FC = () => {
                     const mtlLoader = new MTLLoader();
                     // mtlLoader.setTexturePath('models/');
                     mtlLoader.setPath('models/');
+                    // @ts-ignore
                     mtlLoader.load('Chair.mtl', (materials: any) => {
                         materials.preload()
 
@@ -147,7 +148,7 @@ const ThreeScene: React.FC = () => {
                         );
                     }, (xhr: { loaded: number; total: number; }) => {
                         console.log((xhr.loaded / xhr.total * 100) + '% Texture loaded');
-                    }, (error) => {
+                    }, error => {
                         console.log(error);
                     });
                 }
