@@ -143,13 +143,13 @@ const ThreeScene: React.FC = () => {
                             },
                             // called when loading has errors
                             error => {
-                                console.log('An error happened');
+                                console.log('An error happened with objloader');
                             }
                         );
                     }, (xhr: { loaded: number; total: number; }) => {
                         console.log((xhr.loaded / xhr.total * 100) + '% Texture loaded');
                     }, error => {
-                        console.log(error);
+                        console.log('An error happened with mtlloader');
                     });
                 }
                 loadOBJ()
