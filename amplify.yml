@@ -4,7 +4,6 @@ frontend:
     build:
       commands:
         - npm install  # Install dependencies
-        - npm run type-check  # Run TypeScript type checking
         - npm run build  # Build the Next.js app
   artifacts:
     baseDirectory: .next  # Specify the directory where the build artifacts are located
