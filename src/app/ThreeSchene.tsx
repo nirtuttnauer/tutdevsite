@@ -147,7 +147,7 @@ const ThreeScene: React.FC = () => {
                         );
                     }, (xhr: { loaded: number; total: number; }) => {
                         console.log((xhr.loaded / xhr.total * 100) + '% Texture loaded');
-                    }, (error: any) => {
+                    }, (error) => {
                         console.log(error);
                     });
                 }
