@@ -8,13 +8,7 @@ import {MTLLoader} from 'three/addons/loaders/MTLLoader.js';
 // @ts-ignore
 import {OBJLoader} from 'three/addons/loaders/OBJLoader.js';
 
-const ThreeScene: React.FC = () => {
-    // Create a reference to the element we want to attach the scene to
-    const containerRef = useRef<HTMLDivElement>(null);
-    // Create a reference to the <canvas> element
-    const initialized = useRef(false)
-
-    interface Settings {
+  interface Settings {
         obj: string;
         pov: number;
         cameraZ: number;
@@ -32,7 +26,7 @@ const ThreeScene: React.FC = () => {
 
     const settings: Settings = {
         obj: "Chair.obj",
-        pov: 100,
+        pov: 150,
         cameraZ: 100,
         cameraX: 0,
         cameraY: 0,
@@ -44,6 +38,14 @@ const ThreeScene: React.FC = () => {
         lightDistance: 0,
         objColor: 0x000000,
     };
+
+const ThreeScene: React.FC = () => {
+    // Create a reference to the element we want to attach the scene to
+    const containerRef = useRef<HTMLDivElement>(null);
+    // Create a reference to the <canvas> element
+    const initialized = useRef(false)
+
+
 
     useEffect(() => {
         // Check if the component has been initialized (this is used to prevent the component from re-rendering)
@@ -164,7 +166,7 @@ const ThreeScene: React.FC = () => {
             }
         }
     }, []);
-  return <div className="h-[200vh] w-screen" ref={containerRef} />;
+  return <div className="h-screen w-screen" ref={containerRef} />;
 
 
 };
