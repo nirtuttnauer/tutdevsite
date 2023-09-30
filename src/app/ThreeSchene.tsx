@@ -140,16 +140,10 @@ const ThreeScene: React.FC = () => {
                                 //consoles the loading progress
                                 console.log((xhr.loaded / xhr.total * 100) + '% loaded');
 
-                            },
-                            // called when loading has errors
-                            error => {
-                                console.log('An error happened with objloader');
                             }
                         );
                     }, (xhr: { loaded: number; total: number; }) => {
                         console.log((xhr.loaded / xhr.total * 100) + '% Texture loaded');
-                    }, error => {
-                        console.log('An error happened with mtlloader');
                     });
                 }
                 loadOBJ()
