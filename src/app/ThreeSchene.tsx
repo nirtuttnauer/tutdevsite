@@ -26,7 +26,7 @@ import {OBJLoader} from 'three/addons/loaders/OBJLoader.js';
 
     const settings: Settings = {
         obj: "Chair.obj",
-        pov: 150,
+        pov: 100,
         cameraZ: 100,
         cameraX: 0,
         cameraY: 0,
