@@ -8,36 +8,36 @@ import {MTLLoader} from 'three/addons/loaders/MTLLoader.js';
 // @ts-ignore
 import {OBJLoader} from 'three/addons/loaders/OBJLoader.js';
 
-  interface Settings {
-        obj: string;
-        pov: number;
-        cameraZ: number;
-        cameraX: number;
-        cameraY: number;
-        lightX: number;
-        lightY: number;
-        lightZ: number;
-        lightColor: number;
-        lightIntensity: number;
-        lightDistance: number;
-        objColor: number;
+interface Settings {
+    obj: string;
+    pov: number;
+    cameraZ: number;
+    cameraX: number;
+    cameraY: number;
+    lightX: number;
+    lightY: number;
+    lightZ: number;
+    lightColor: number;
+    lightIntensity: number;
+    lightDistance: number;
+    objColor: number;
 
-    }
+}
 
-    const settings: Settings = {
-        obj: "Chair.obj",
-        pov: 100,
-        cameraZ: 100,
-        cameraX: 0,
-        cameraY: 0,
-        lightX: 0,
-        lightY: 0,
-        lightZ: 0,
-        lightColor: 0xFFFFFF,
-        lightIntensity: 0.8,
-        lightDistance: 0,
-        objColor: 0x000000,
-    };
+const settings: Settings = {
+    obj: "Chair.obj",
+    pov: 100,
+    cameraZ: 100,
+    cameraX: 0,
+    cameraY: 0,
+    lightX: 0,
+    lightY: 0,
+    lightZ: 0,
+    lightColor: 0xFFFFFF,
+    lightIntensity: 0.8,
+    lightDistance: 0,
+    objColor: 0x000000,
+};
 
 const ThreeScene: React.FC = () => {
     // Create a reference to the element we want to attach the scene to
@@ -46,9 +46,10 @@ const ThreeScene: React.FC = () => {
     const initialized = useRef(false)
 
 
-
     useEffect(() => {
-        // Check if the component has been initialized (this is used to prevent the component from re-rendering)
+
+
+// Check if the component has been initialized (this is used to prevent the component from re-rendering)
         if (!initialized.current) {
             initialized.current = true
             // Check if the window is defined (necessary for server-side rendering)
@@ -62,11 +63,9 @@ const ThreeScene: React.FC = () => {
                 containerRef.current.appendChild(renderer.domElement);
                 camera.position.z = settings.cameraZ;
 
-                // i want to save the chair as a variable
                 let obj: any;
 
                 const addLights = () => {
-                    //Create a DirectionalLight and turn on shadows for the light
                     const keyLight = new THREE.DirectionalLight(settings.lightColor, settings.lightIntensity);
                     keyLight.position.set(-100, 0, 100);
 
@@ -86,21 +85,25 @@ const ThreeScene: React.FC = () => {
                 }
                 addLights();
 
-
                 let dRight = true;
                 const renderScene = () => {
 
-                    //rotate the chair left and right between 2 and -2
-                    if (obj) {
-                        if (dRight && obj.rotation.y < 0) {
-                            obj.rotation.y += 0.001;
-                        } else if (!dRight && obj.rotation.y > -4) {
-                            obj.rotation.y -= 0.001;
-                        } else {
-                            dRight = !dRight; // Reverse the direction
+                    const rotateLeftToRight = (obj: any) => {
+                        if (obj) {
+                            if (dRight && obj.rotation.y < 0) {
+                                obj.rotation.y += 0.001;
+                            } else if (!dRight && obj.rotation.y > -4) {
+                                obj.rotation.y -= 0.001;
+                            } else {
+                                dRight = !dRight; // Reverse the direction
+                            }
+                            // console.log(obj.rotation.y)
                         }
-                        console.log(obj.rotation.y)
-                    }
+                    };
+
+                    //rotate the chair left and right between 2 and -2
+                    rotateLeftToRight(obj);
+
 
                     renderer.render(scene, camera);
                     requestAnimationFrame(renderScene);
@@ -166,7 +169,7 @@ const ThreeScene: React.FC = () => {
             }
         }
     }, []);
-  return <div className="h-screen w-screen" ref={containerRef} />;
+    return <div className="h-screen w-screen" ref={containerRef}/>;
 
 
 };
