@@ -5,7 +5,7 @@ const Navbar = () => {
         <nav className="bg-blue-500 p-4">
             <div className="container">
                 <div className="mx-auto">
-                    <Link href="/">TUTDEV</Link>
+                    <Link href="/">TUT:DEV</Link>
                 </div>
                 <div className="mx-auto mt-4">
                     <Link href="/projects">Projects</Link>
