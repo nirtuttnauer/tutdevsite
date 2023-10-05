@@ -1,0 +1,160 @@
+{
+  "name": "Nir Tuttnauer",
+  "contact": {
+    "email": "Nir.tuttnauer@gmail.com",
+    "phone": "(+972) 50-2052803",
+    "address": "Hasharig 11th, Rishon Lezion, Israel, 7549609"
+  },
+  "sections": {
+    "Objective": "Experienced software developer with a passion for innovation, seeking opportunities to leverage my skills in web development, machine learning, cloud computing, and database management to drive impactful projects and contribute to the success of forward-thinking teams.",
+    "Summary": "Experienced software developer with a strong background in web development, backend development, machine learning, cloud computing, and database management. Currently pursuing a Bachelor of Science in Computer Science at the College of Management.",
+    "Education": {
+      "Degree": "Bachelor of Science in Computer Science (In Progress)",
+      "School": "College of Management Academic Studies",
+      "Starting Year": 2021
+    },
+    "Experience": {
+      "Web Developer": {
+        "company": "College Web Development Team",
+        "dates": "2022 - Present",
+        "responsibilities": [
+          "Collaborated with the college web development team to design and develop web applications.",
+          "Developed responsive and user-friendly front-end using JavaScript, React, and Next.js.",
+          "Designed and implemented RESTful APIs for seamless communication between the front-end and back-end systems.",
+          "Enhanced website performance through code optimization, resulting in faster loading times.",
+          "Contributed to the maintenance and improvement of existing web applications.",
+          "Collaborated with UI/UX designers to ensure a visually appealing and user-centric design."
+        ]
+      },
+      "E-commerce Website Front-end Developer": {
+        "company": "Team Project - E-commerce Web",
+        "dates": "2023 - Present",
+        "responsibilities": [
+          "Led the front-end development of an e-commerce website as part of a team project.",
+          "Implemented CRUD functionality for three models, ensuring smooth data management.",
+          "Integrated Bing Maps API for geocoding and location-based features.",
+          "Fetched and displayed data from MongoDB using the MVC architecture.",
+          "Collaborated closely with team members to ensure project milestones and deadlines were met."
+        ]
+      },
+      "NTCreative": {
+        "Designer, Photographer, and Video Editor": {
+          "dates": "2012 - 2021",
+          "responsibilities": [
+            "Operated as an independent creative professional specializing in design, photography, and video editing.",
+            "Provided creative services to clients, including design work, photography sessions, and video editing projects.",
+            "Managed client relationships, project timelines, and delivered high-quality creative content.",
+            "Built a strong reputation and client base over the nine-year period."
+          ]
+        },
+        "Go Creative Studios": {
+          "dates": "2020 - 2021",
+          "responsibilities": [
+            "Founded and operated a commercial studio specializing in photography.",
+            "Focused on commercial photography, studio shoots, and client collaborations.",
+            "Managed all aspects of studio operations, including client acquisition, project management, and budgeting.",
+            "Successfully operated the studio for one year before closing it down in 2022."
+          ]
+        }
+      }
+    },
+    "Projects": {
+      "BookScrabble - Multiplayer Word Game": {
+        "description": "Led the development team, ensuring project milestones and deadlines were met.",
+        "accomplishments": [
+          "Implemented game mechanics, word validation, scoring, and real-time gameplay updates.",
+          "Designed networking features for multiplayer gameplay and chat functionality.",
+          "Utilized MVVM (Model-View-ViewModel) architecture for code organization and maintainability.",
+          "Received positive user feedback for an engaging gaming experience."
+        ]
+      },
+      "Oracle Cloud AI Hackathon (Third Place)": {
+        "description": "Participated in the Oracle Cloud AI Hackathon and secured third place with my team. Developed innovative solutions using Oracle's cloud and AI technologies.",
+        "accomplishments": [
+          "Collaborated closely with team members to brainstorm and implement creative ideas.",
+          "Utilized Oracle's cloud services and AI tools to build and present our solutions.",
+          "Demonstrated strong problem-solving skills and innovative thinking.",
+          "Received recognition for securing the third-place position in the competition."
+        ]
+      }
+    },
+    "Skills": {
+      "Web Development": [
+        "JavaScript",
+        "React",
+        "Next.js",
+        "HTML/CSS",
+        "Bootstrap",
+        "Tailwind CSS",
+        "Webpack",
+        "jQuery",
+        "EJS",
+        "Three.js",
+        "D3.js"
+      ],
+      "Backend Development": [
+        "Node.js",
+        "Express.js",
+        "RESTful API design",
+        "Database design and management (SQL, MongoDB)"
+      ],
+      "Machine Learning": [
+        "Python",
+        "Machine learning algorithms (scikit-learn)",
+        "Data preprocessing",
+        "TensorFlow and Keras"
+      ],
+      "Cloud Computing": [
+        "AWS (Amazon Web Services)",
+        "AWS Amplify",
+        "EC2, S3, Lambda, IAM"
+      ],
+      "Database Management": [
+        "MongoDB",
+        "SQL (MySQL, PostgreSQL)"
+      ],
+      "Firebase": [
+        "Firebase Realtime Database",
+        "Firebase Authentication"
+      ],
+      "iOS Development": [
+        "iOS app development using Swift, UIKit, SwiftUI, ARKit 2, and CoreML"
+      ],
+      "Creative Skills": [
+        "Photography",
+        "Videography",
+        "Animation",
+        "Graphic Design",
+        "UI/UX Design",
+        "Print Design",
+        "Video Editing",
+        "Cinema 4D (C4D)",
+        "3D"
+      ]
+    },
+    "Languages": {
+      "English": "Fluent",
+      "Hebrew": "Native"
+    },
+    "Certifications": {
+      "AWS Certified Developer - Associate": {
+        "organization": "Amazon Web Services",
+        "year": 2022,
+        "link": "Insert Certification Link Here"
+      },
+      "iOS Development Bootcamp Certification": {
+        "organization": "Udemy",
+        "year": 2023,
+        "link": "Insert Certification Link Here"
+      }
+    },
+    "Social Links": {
+      "LinkedIn": {
+        "url": "https://www.linkedin.com/in/nir-tuttnauer/"
+      },
+      "GitHub": {
+        "url": "https://github.com/nirtuttnauer"
+      }
+    }
+  }
+}
